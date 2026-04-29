@@ -1,7 +1,7 @@
 # Nile Crop
 
 <p align="center">
-  <img src="nile-crop/public/nile-crop-logo-cropped.png" alt="Nile Crop Logo" width="180" />
+  <img src="nile-crop/public/nile-crop-logo-transparent.png" alt="Nile Crop Logo" width="180" />
 </p>
 
 <p align="center">

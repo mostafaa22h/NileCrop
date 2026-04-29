@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full">
             <img
-              src="/nile-crop-logo-cropped.png"
+              src="/nile-crop-logo-transparent.png"
               alt="Nile Crop logo"
               className="h-full w-full object-cover"
             />
