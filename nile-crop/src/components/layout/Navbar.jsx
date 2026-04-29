@@ -22,11 +22,13 @@ export default function Navbar() {
     <header className="sticky top-0 z-20 bg-white/70 backdrop-blur-xl">
       <div className="mx-auto mt-3 flex w-full max-w-7xl items-center justify-between gap-4 rounded-full border border-brand-primary/10 bg-white/90 px-4 py-3 shadow-[0_10px_30px_rgba(20,83,45,0.06)] sm:px-6">
         <div className="flex items-center gap-3">
-          <img
-            src="/nile-crop-logo.jpg"
-            alt="Nile Crop logo"
-            className="h-10 w-10 rounded-2xl border border-brand-primary/10 object-cover"
-          />
+          <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full">
+            <img
+              src="/nile-crop-logo-cropped.png"
+              alt="Nile Crop logo"
+              className="h-full w-full object-cover"
+            />
+          </div>
           <div>
             <p className="text-lg font-black tracking-tight text-brand-dark">Nile Crop</p>
             <p className="text-xs text-brand-text/60">{t("navbar.tagline")}</p>
