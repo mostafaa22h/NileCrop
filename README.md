@@ -42,18 +42,29 @@ This repository is organized as a single project with two main parts:
 
 ```text
 NileCrop
-├── nile-crop
-│   ├── src
-│   ├── public
+├── nile-crop/
+│   ├── src/
+│   ├── public/
 │   └── package.json
-├── smart-crop-backend
-│   ├── routers
-│   ├── services
-│   ├── models
-│   ├── disease_models
-│   ├── ml_models
+├── smart-crop-backend/
+│   ├── routers/
+│   ├── services/
+│   ├── models/
+│   ├── disease_models/
+│   ├── ml_models/
 │   └── requirements.txt
 └── README.md
+```
+
+## Architecture
+
+```mermaid
+flowchart LR
+    A["React Frontend"] --> B["FastAPI Backend"]
+    B --> C["Crop Recommendation Logic"]
+    B --> D["Disease Detection Model"]
+    C --> E["Crop ML Artifacts (.pkl)"]
+    D --> F["Disease Model (.h5)"]
 ```
 
 ## How To Run
@@ -94,11 +105,24 @@ Visit:
 
 ## Team Members
 
-Add your team members here:
+Supervisor:
 
-- Member 1
-- Member 2
-- Member 3
+- Dr. Eman Salah Salem Ahmed
+
+Team Leader:
+
+- Ashraf Mohamed El Sayed — ID: 4241391
+
+Project Team:
+
+- Mostafa Hamdy Ahmed — ID: 4241362
+- Rofaida Islam Elsayed — ID: 4241635
+- Ahmed Elsaed Mostafa — ID: 4241309
+- Fares Ahmed Adel — ID: 4241131
+- Lina Mohamed Sayed — ID: 4241289
+- Sama Abdalla Elsaied — ID: 4241527
+- Mohamed Adel Elbaz — ID: 4241120
+- Mohamed Wael Abdel-Momen — ID: 4241341
 
 ## Security And Repository Notes
 
@@ -114,6 +138,26 @@ The current ML model files are already small enough to stay inside the repositor
 
 - `disease_model.h5`: about `9.35 MB`
 - `crop_model.pkl`: about `2.79 MB`
+
+Important:
+
+- `.pkl` and `.h5` files are trained model artifacts, not source code files
+- the source code that loads and uses them is inside:
+  - `smart-crop-backend/services/recommendation_engine.py`
+  - `smart-crop-backend/services/disease_engine.py`
+  - `smart-crop-backend/routers/recommend.py`
+  - `smart-crop-backend/routers/upload.py`
+
+## AI Training Note
+
+This submission contains the deployed inference assets and backend integration needed to run the project.
+
+Some earlier internal AI iteration files such as model training/export utilities were developed separately in previous project versions. The current repository focuses on the runnable academic submission version:
+
+- frontend
+- backend
+- trained model artifacts
+- inference and API integration
 
 If model sizes grow later, use one of these options:
 

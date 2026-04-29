@@ -18,6 +18,8 @@ smart-crop-backend/**/__pycache__/
 smart-crop-backend/.pytest_cache/
 smart-crop-backend/pytest-cache-files-*/
 smart-crop-backend/uploads/
+smart-crop-backend/*.db
+smart-crop-backend/data/*.db
 smart-crop-backend/*.db-journal
 smart-crop-backend/**/*.db-journal
 
