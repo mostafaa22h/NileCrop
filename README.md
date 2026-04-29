@@ -1,10 +1,16 @@
 # Nile Crop
 
-Nile Crop is a smart agriculture project that combines a modern frontend, a FastAPI backend, and AI-powered crop and disease analysis in one repository.
+<p align="center">
+  <img src="nile-crop/public/nile-crop-logo.jpg" alt="Nile Crop Logo" width="180" />
+</p>
+
+<p align="center">
+  Smart agriculture platform for crop recommendation and plant disease detection with an Arabic-first experience.
+</p>
 
 ## Overview
 
-This repository is organized as a single project with two main parts:
+Nile Crop combines a modern frontend, a FastAPI backend, and AI-powered crop and disease analysis in one repository.
 
 - `nile-crop/`: frontend application
 - `smart-crop-backend/`: backend API and AI logic
@@ -32,16 +38,25 @@ Project Team:
 
 ## Screenshots
 
-- Home interface: main landing page with crop recommendation and disease detection access
-- Crop recommendation result: shows the top suggested crops based on the selected city
-- Disease detection result: shows the uploaded leaf image, detected disease, confidence, and treatment guidance
+### Home Interface
+
+![Home Interface](docs/screenshots/home.jpg)
+
+### Crop Recommendation
+
+![Crop Recommendation](docs/screenshots/crop-results.jpg)
+
+### Disease Detection
+
+![Disease Detection](docs/screenshots/disease-results.jpg)
 
 ## Features
 
 - Crop recommendation based on city and agricultural conditions
+- Seasonal crop filtering based on the current agricultural season
 - Plant disease detection from uploaded leaf images
 - Arabic-first user interface
-- Fast API-based backend for frontend integration
+- FastAPI-based backend for frontend integration
 - AI/ML models for crop and disease prediction
 
 ## Tech Stack
@@ -67,18 +82,20 @@ Project Team:
 
 ```text
 NileCrop
-├── nile-crop/
-│   ├── src/
-│   ├── public/
-│   └── package.json
-├── smart-crop-backend/
-│   ├── routers/
-│   ├── services/
-│   ├── models/
-│   ├── disease_models/
-│   ├── ml_models/
-│   └── requirements.txt
-└── README.md
+|-- nile-crop/
+|   |-- public/
+|   |-- src/
+|   `-- package.json
+|-- smart-crop-backend/
+|   |-- routers/
+|   |-- services/
+|   |-- models/
+|   |-- disease_models/
+|   |-- ml_models/
+|   `-- requirements.txt
+|-- docs/
+|   `-- screenshots/
+`-- README.md
 ```
 
 ## Architecture
@@ -105,10 +122,14 @@ cd NileCrop
 
 ```powershell
 cd smart-crop-backend
-python -m venv venv
-.\venv\Scripts\activate
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 python -m uvicorn main:app --host 127.0.0.1 --port 8000
+```
+
+If port `8000` is busy, run:
+
+```powershell
+python -m uvicorn main:app --host 127.0.0.1 --port 8001
 ```
 
 ### 3. Run the frontend
@@ -122,8 +143,6 @@ npm run dev -- --host 127.0.0.1 --port 5173
 ```
 
 ### 4. Open the app
-
-Visit:
 
 - Frontend: `http://127.0.0.1:5173`
 - Backend: `http://127.0.0.1:8000`
