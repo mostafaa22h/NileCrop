@@ -3,7 +3,13 @@ import { egyptianCities } from "@data/egyptianCities";
 
 const useMockApi = import.meta.env.VITE_USE_MOCK_API === "true";
 const configuredApiUrl = import.meta.env.VITE_API_URL?.trim();
-const apiBaseUrls = [configuredApiUrl, "http://127.0.0.1:8000", "http://localhost:8000"].filter(Boolean);
+const apiBaseUrls = [
+  configuredApiUrl,
+  "http://127.0.0.1:8000",
+  "http://localhost:8000",
+  "http://127.0.0.1:8001",
+  "http://localhost:8001",
+].filter(Boolean);
 
 function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
