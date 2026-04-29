@@ -19,6 +19,7 @@ smart-crop-backend/.pytest_cache/
 smart-crop-backend/pytest-cache-files-*/
 smart-crop-backend/uploads/
 smart-crop-backend/*.db-journal
+smart-crop-backend/**/*.db-journal
 
 # Root temp files
 uploads/
