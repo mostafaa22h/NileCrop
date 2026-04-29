@@ -1,0 +1,40 @@
+export default function HeroSection() {
+  return (
+    <section className="hero">
+
+      <div className="hero-container">
+        <div className="hero-text">
+          <h1>
+            زراعة ذكية تبدأ من هنا 🌱
+          </h1>
+
+          <h2>
+            اختار أفضل محصول لأرضك بسهولة
+          </h2>
+
+          <p>
+            استخدم الذكاء الاصطناعي لتحليل التربة والطقس واكتشاف أمراض النباتات بدقة عالية
+          </p>
+
+          <div className="hero-buttons">
+            <button className="btn-primary">
+              🌱 ترشيح محصول
+            </button>
+
+            <button className="btn-secondary">
+              🦠 كشف مرض
+            </button>
+          </div>
+        </div>
+
+        <div className="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3"
+            alt="farm"
+          />
+        </div>
+
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,90 @@
+﻿{
+  "offlineBanner": "You are offline right now. Some features may not work until the connection is restored.",
+  "common": {
+    "loading": "Processing..."
+  },
+  "navbar": {
+    "tagline": "Arabic-first farming intelligence",
+    "status": "Ready to demo",
+    "caption": "Fast and bilingual UI",
+    "links": {
+      "crop": "Crop Recommendation",
+      "disease": "Disease Detection"
+    }
+  },
+  "hero": {
+    "kicker": "Smart Agricultural Tools",
+    "title": "Better farming decisions start from one interface",
+    "subtitle": "Recommend the right crop and detect plant diseases in one clear workflow",
+    "description": "Nile Crop helps farmers pick suitable crops by city and upload plant photos for an initial disease assessment with clear, practical guidance.",
+    "footnote": "A polished frontend experience prepared for backend and AI integration.",
+    "actions": {
+      "crop": "Get Crop",
+      "disease": "Detect Disease"
+    },
+    "highlights": {
+      "cities": {
+        "value": "+25",
+        "label": "Egyptian cities available in suggestions"
+      },
+      "crop": {
+        "value": "3 Results",
+        "label": "Top recommendations returned for each analysis"
+      },
+      "disease": {
+        "value": "1 Image",
+        "label": "Enough to start a first disease scan"
+      }
+    },
+    "slides": {
+      "crop": "Crop planning based on field conditions",
+      "monitoring": "Clearer visual monitoring for the field",
+      "modern": "Smart tools for modern farming"
+    }
+  },
+  "cropModal": {
+    "badge": "Crop Recommendation",
+    "title": "Find the best crop for your city",
+    "subtitle": "Enter the city name and start an initial crop recommendation based on the surrounding agricultural conditions.",
+    "nav": {
+      "analysis": "Analysis",
+      "location": "Location",
+      "results": "Results"
+    },
+    "cityLabel": "City name",
+    "cityPlaceholder": "Start typing the city name",
+    "useLocation": "Detect city from my current location",
+    "submit": "Start analysis",
+    "loadingLabel": "Requesting the best crop recommendations",
+    "suggestionsTitle": "Suggested cities",
+    "resultsTitle": "Top crop recommendations",
+    "errors": {
+      "emptyCity": "Please choose a city first.",
+      "noResults": "The server did not return valid recommendations.",
+      "server": "Unable to get recommendations right now. Please try again shortly.",
+      "location": "Unable to detect the city from your current location."
+    }
+  },
+  "diseaseModal": {
+    "badge": "Disease Detection",
+    "title": "Scan a plant photo for an initial diagnosis",
+    "subtitle": "Upload a clear image of the affected leaf or fruit and send it to the model for disease prediction and treatment guidance.",
+    "nav": {
+      "scan": "Scan",
+      "upload": "Upload",
+      "treatment": "Treatment"
+    },
+    "uploadBadge": "Plant image upload",
+    "uploadTitle": "Drop the image here or click to upload",
+    "uploadHint": "JPG or PNG up to 10MB. The image will be compressed before upload.",
+    "submit": "Analyze image",
+    "loadingLabel": "Analyzing image",
+    "resultsTitle": "Detection result",
+    "errors": {
+      "emptyImage": "Please upload an image first.",
+      "compression": "Unable to prepare the image for upload.",
+      "noResults": "The server did not return a valid prediction.",
+      "server": "Unable to analyze the image right now. Please try again later."
+    }
+  }
+}

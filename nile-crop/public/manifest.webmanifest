@@ -1,0 +1,16 @@
+﻿{
+  "name": "Nile Crop",
+  "short_name": "NileCrop",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0fdf4",
+  "theme_color": "#16a34a",
+  "description": "Smart crop recommendation and plant disease detection for Arabic-speaking farmers.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

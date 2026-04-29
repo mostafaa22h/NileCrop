@@ -1,0 +1,26 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Frontend
+nile-crop/node_modules/
+nile-crop/dist/
+nile-crop/.vite/
+nile-crop/.vite-cache*/
+nile-crop/*.local
+
+# Backend
+smart-crop-backend/venv/
+smart-crop-backend/__pycache__/
+smart-crop-backend/**/__pycache__/
+smart-crop-backend/.pytest_cache/
+smart-crop-backend/pytest-cache-files-*/
+smart-crop-backend/uploads/
+smart-crop-backend/*.db-journal
+
+# Root temp files
+uploads/
+*.log
+*.zip
