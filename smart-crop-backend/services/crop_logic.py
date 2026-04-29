@@ -1,35 +1,42 @@
+from datetime import datetime
+
+
 REGION_CROP_LIBRARY = {
     "delta": [
-        {"name": "Wheat", "base": 88, "reason_ar": "محصول ثابت وملائم لمدن الدلتا مع توازن جيد في الرطوبة."},
-        {"name": "Rice", "base": 85, "reason_ar": "يناسب المناطق الأعلى رطوبة وشبكات الري القوية في الدلتا."},
-        {"name": "Cotton", "base": 82, "reason_ar": "خيار جيد في التربة الطينية المنتشرة في كثير من مدن الدلتا."},
-        {"name": "Corn", "base": 78, "reason_ar": "بديل مناسب عند ارتفاع الحرارة نسبيًا خلال الموسم."},
+        {"name": "Wheat", "base": 88, "season": "winter", "reason_ar": "محصول ثابت وملائم لمدن الدلتا مع توازن جيد في الرطوبة."},
+        {"name": "Rice", "base": 85, "season": "summer", "reason_ar": "يناسب المناطق الأعلى رطوبة وشبكات الري القوية في الدلتا."},
+        {"name": "Cotton", "base": 82, "season": "summer", "reason_ar": "خيار جيد في التربة الطينية المنتشرة في كثير من مدن الدلتا."},
+        {"name": "Corn", "base": 78, "season": "summer", "reason_ar": "بديل مناسب عند ارتفاع الحرارة نسبيًا خلال الموسم."},
     ],
     "coastal": [
-        {"name": "Tomato", "base": 87, "reason_ar": "ملائم للمناخ المعتدل نسبيًا في المدن الساحلية."},
-        {"name": "Potato", "base": 84, "reason_ar": "أداؤه جيد في الأجواء الساحلية مع إدارة ري منتظمة."},
-        {"name": "Wheat", "base": 79, "reason_ar": "خيار مستقر إذا كانت التربة جيدة والصرف مناسب."},
-        {"name": "Barley", "base": 77, "reason_ar": "يتحمل الظروف الساحلية ويعطي استقرارًا جيدًا."},
+        {"name": "Tomato", "base": 87, "season": "summer", "reason_ar": "ملائم للمناخ المعتدل نسبيًا في المدن الساحلية."},
+        {"name": "Potato", "base": 84, "season": "winter", "reason_ar": "أداؤه جيد في الأجواء الساحلية مع إدارة ري منتظمة."},
+        {"name": "Wheat", "base": 79, "season": "winter", "reason_ar": "خيار مستقر إذا كانت التربة جيدة والصرف مناسب."},
+        {"name": "Barley", "base": 77, "season": "winter", "reason_ar": "يتحمل الظروف الساحلية ويعطي استقرارًا جيدًا."},
     ],
     "upper_egypt": [
-        {"name": "Sugarcane", "base": 89, "reason_ar": "من أنسب المحاصيل لحرارة الصعيد وتوفر موسم نمو طويل."},
-        {"name": "Corn", "base": 84, "reason_ar": "ملائم لدرجات الحرارة الأعلى مع إدارة مائية جيدة."},
-        {"name": "Sesame", "base": 81, "reason_ar": "يتحمل الجو الدافئ والجاف نسبيًا في الصعيد."},
-        {"name": "Wheat", "base": 75, "reason_ar": "يبقى خيارًا مقبولًا في العروات المناسبة."},
+        {"name": "Sugarcane", "base": 89, "season": "summer", "reason_ar": "من أنسب المحاصيل لحرارة الصعيد وتوفر موسم نمو طويل."},
+        {"name": "Corn", "base": 84, "season": "summer", "reason_ar": "ملائم لدرجات الحرارة الأعلى مع إدارة مائية جيدة."},
+        {"name": "Sesame", "base": 81, "season": "summer", "reason_ar": "يتحمل الجو الدافئ والجاف نسبيًا في الصعيد."},
+        {"name": "Wheat", "base": 75, "season": "winter", "reason_ar": "يبقى خيارًا مقبولًا في العروات المناسبة."},
     ],
     "desert": [
-        {"name": "Watermelon", "base": 86, "reason_ar": "يناسب التربة الرملية والمناطق الجافة نسبيًا."},
-        {"name": "Olive", "base": 83, "reason_ar": "خيار قوي في البيئات الصحراوية وشبه الصحراوية."},
-        {"name": "Barley", "base": 79, "reason_ar": "يتحمل الجفاف ويعطي استقرارًا أفضل من محاصيل كثيرة."},
-        {"name": "Corn", "base": 72, "reason_ar": "ممكن لكنه يحتاج متابعة أدق للري."},
+        {"name": "Watermelon", "base": 86, "season": "summer", "reason_ar": "يناسب التربة الرملية والمناطق الجافة نسبيًا."},
+        {"name": "Olive", "base": 83, "season": "summer", "reason_ar": "خيار قوي في البيئات الصحراوية وشبه الصحراوية."},
+        {"name": "Barley", "base": 79, "season": "winter", "reason_ar": "يتحمل الجفاف ويعطي استقرارًا أفضل من محاصيل كثيرة."},
+        {"name": "Corn", "base": 72, "season": "summer", "reason_ar": "ممكن لكنه يحتاج متابعة أدق للري."},
     ],
     "general": [
-        {"name": "Wheat", "base": 85, "reason_ar": "محصول متوازن ومناسب كخيار عام في ظروف متنوعة."},
-        {"name": "Corn", "base": 80, "reason_ar": "خيار جيد مع الحرارة الأعلى نسبيًا."},
-        {"name": "Potato", "base": 78, "reason_ar": "مناسب عند انتظام الري وتحسن خواص التربة."},
-        {"name": "Beans", "base": 76, "reason_ar": "خيار جيد للمزارعين الباحثين عن تنوع في الدورة الزراعية."},
+        {"name": "Wheat", "base": 85, "season": "winter", "reason_ar": "محصول متوازن ومناسب كخيار عام في ظروف متنوعة."},
+        {"name": "Corn", "base": 80, "season": "summer", "reason_ar": "خيار جيد مع الحرارة الأعلى نسبيًا."},
+        {"name": "Potato", "base": 78, "season": "winter", "reason_ar": "مناسب عند انتظام الري وتحسن خواص التربة."},
+        {"name": "Beans", "base": 76, "season": "winter", "reason_ar": "خيار جيد للمزارعين الباحثين عن تنوع في الدورة الزراعية."},
     ],
 }
+
+
+def get_current_season() -> str:
+    return "summer" if datetime.now().month in {4, 5, 6, 7, 8, 9} else "winter"
 
 
 def detect_region(city: str, soil: str) -> str:
@@ -79,7 +86,11 @@ def score_crop(base_score: int, temp: float, humidity: float, soil: str, crop_na
 
 def get_crop_recommendations(city: str, temp: float, humidity: float, soil: str):
     region = detect_region(city, soil)
-    crops = REGION_CROP_LIBRARY[region]
+    current_season = get_current_season()
+    crops = [crop for crop in REGION_CROP_LIBRARY[region] if crop.get("season") == current_season]
+
+    if not crops:
+        crops = REGION_CROP_LIBRARY[region]
 
     ranked = []
     for crop in crops:

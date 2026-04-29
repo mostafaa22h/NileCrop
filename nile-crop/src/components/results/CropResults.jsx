@@ -30,7 +30,7 @@ export default function CropResults({ title, results }) {
 
               {result.score !== null && result.score !== undefined ? (
                 <div className="rounded-2xl bg-brand-surface px-4 py-3 text-sm font-extrabold text-brand-dark">
-                  نسبة التوافق: {typeof result.score === "number" ? `${Math.round(result.score)}%` : result.score}
+                  نسبة النجاح: {typeof result.score === "number" ? `${Math.round(result.score)}%` : result.score}
                 </div>
               ) : null}
             </article>
