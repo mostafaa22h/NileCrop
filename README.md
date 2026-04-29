@@ -28,7 +28,6 @@ Project Team:
 - Lina Mohamed Sayed - ID: 4241289
 - Sama Abdalla Elsaied - ID: 4241527
 - Mohamed Adel Elbaz - ID: 4241120
-- Mohamed Wael Abdel-Momen - ID: 4241341
 - Abdalla adel Mohamed - ID: 4241032
 
 ## Screenshots
