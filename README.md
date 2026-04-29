@@ -2,14 +2,39 @@
 
 Nile Crop is a smart agriculture project that combines a modern frontend, a FastAPI backend, and AI-powered crop and disease analysis in one repository.
 
-![Nile Crop Interface](nile-crop/src/assets/hero.png)
-
 ## Overview
 
 This repository is organized as a single project with two main parts:
 
 - `nile-crop/`: frontend application
 - `smart-crop-backend/`: backend API and AI logic
+
+## Team Members
+
+Supervisor:
+
+- Dr. Eman Salah Salem Ahmed
+
+Team Leader:
+
+- Ashraf Mohamed El Sayed - ID: 4241391
+
+Project Team:
+
+- Mostafa Hamdy Ahmed - ID: 4241362
+- Rofaida Islam Elsayed - ID: 4241635
+- Ahmed Elsaed Mostafa - ID: 4241309
+- Fares Ahmed Adel - ID: 4241131
+- Lina Mohamed Sayed - ID: 4241289
+- Sama Abdalla Elsaied - ID: 4241527
+- Mohamed Adel Elbaz - ID: 4241120
+- Mohamed Wael Abdel-Momen - ID: 4241341
+
+## Screenshots
+
+- Home interface: main landing page with crop recommendation and disease detection access
+- Crop recommendation result: shows the top suggested crops based on the selected city
+- Disease detection result: shows the uploaded leaf image, detected disease, confidence, and treatment guidance
 
 ## Features
 
@@ -102,27 +127,6 @@ Visit:
 
 - Frontend: `http://127.0.0.1:5173`
 - Backend: `http://127.0.0.1:8000`
-
-## Team Members
-
-Supervisor:
-
-- Dr. Eman Salah Salem Ahmed
-
-Team Leader:
-
-- Ashraf Mohamed El Sayed — ID: 4241391
-
-Project Team:
-
-- Mostafa Hamdy Ahmed — ID: 4241362
-- Rofaida Islam Elsayed — ID: 4241635
-- Ahmed Elsaed Mostafa — ID: 4241309
-- Fares Ahmed Adel — ID: 4241131
-- Lina Mohamed Sayed — ID: 4241289
-- Sama Abdalla Elsaied — ID: 4241527
-- Mohamed Adel Elbaz — ID: 4241120
-- Mohamed Wael Abdel-Momen — ID: 4241341
 
 ## Security And Repository Notes
 
