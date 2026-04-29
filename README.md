@@ -1,47 +1,128 @@
 # Nile Crop
 
-Nile Crop is an agriculture project that combines:
+Nile Crop is a smart agriculture project that combines a modern frontend, a FastAPI backend, and AI-powered crop and disease analysis in one repository.
 
-- `nile-crop/`: Frontend application
-- `smart-crop-backend/`: Backend API and AI disease/crop logic
+![Nile Crop Interface](nile-crop/src/assets/hero.png)
 
-## Project Structure
+## Overview
 
-This repository is a single project that contains both parts:
+This repository is organized as a single project with two main parts:
 
-- Frontend: upload plant images, view disease results, and use crop recommendations
-- Backend: serves API endpoints, runs crop recommendation logic, and runs plant disease prediction
+- `nile-crop/`: frontend application
+- `smart-crop-backend/`: backend API and AI logic
 
-## Folders
+## Features
 
-- `nile-crop`
-  - React + Vite frontend
-  - UI, pages, modals, translations, and API calls
+- Crop recommendation based on city and agricultural conditions
+- Plant disease detection from uploaded leaf images
+- Arabic-first user interface
+- Fast API-based backend for frontend integration
+- AI/ML models for crop and disease prediction
 
-- `smart-crop-backend`
-  - FastAPI backend
-  - ML models for crop recommendation
-  - Disease detection model and API routes
-
-## Quick Start
+## Tech Stack
 
 ### Frontend
 
-```bash
-cd nile-crop
-npm install
-npm run dev
-```
+- React
+- Vite
+- JavaScript
+- CSS
+- Axios
+- i18next
 
 ### Backend
 
-```bash
-cd smart-crop-backend
-venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8000
+- FastAPI
+- Python
+- TensorFlow
+- scikit-learn
+- SQLAlchemy
+
+## Project Structure
+
+```text
+NileCrop
+├── nile-crop
+│   ├── src
+│   ├── public
+│   └── package.json
+├── smart-crop-backend
+│   ├── routers
+│   ├── services
+│   ├── models
+│   ├── disease_models
+│   ├── ml_models
+│   └── requirements.txt
+└── README.md
 ```
 
-## Notes
+## How To Run
 
-- This is a `monorepo`, which means frontend and backend are in the same GitHub repository.
-- The frontend is not missing.
-- The backend and AI parts are not separate repositories; they are organized as folders inside the same project.
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/mostafaa22h/NileCrop.git
+cd NileCrop
+```
+
+### 2. Run the backend
+
+```powershell
+cd smart-crop-backend
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+python -m uvicorn main:app --host 127.0.0.1 --port 8000
+```
+
+### 3. Run the frontend
+
+Open a second terminal:
+
+```powershell
+cd nile-crop
+npm install
+npm run dev -- --host 127.0.0.1 --port 5173
+```
+
+### 4. Open the app
+
+Visit:
+
+- Frontend: `http://127.0.0.1:5173`
+- Backend: `http://127.0.0.1:8000`
+
+## Team Members
+
+Add your team members here:
+
+- Member 1
+- Member 2
+- Member 3
+
+## Security And Repository Notes
+
+- `.env` files are not tracked
+- No API keys or secret tokens were found in the uploaded repository
+- `node_modules` is not tracked
+- `venv` is not tracked
+- temporary cache folders are not tracked
+
+## Models
+
+The current ML model files are already small enough to stay inside the repository:
+
+- `disease_model.h5`: about `9.35 MB`
+- `crop_model.pkl`: about `2.79 MB`
+
+If model sizes grow later, use one of these options:
+
+- Git LFS
+- Google Drive link
+- cloud storage download step during setup
+
+## Release
+
+Current release tag:
+
+- `v1.0`
